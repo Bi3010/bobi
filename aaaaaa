@@ -23,7 +23,7 @@ getgenv().petsGoConfig = {
     MAIL_PET_ODDS = 1000000000,  -- Minimum Pet Odds To Mail
 
 
-    USERNAME_TO_MAIL = {"phatbi1273621537", "bi3826r8wsdfsdif"}, -- Mail to username, Example : USERNAME_TO_MAIL = {"username1", "username2"} 
+    USERNAME_TO_MAIL = {"AlisonBaxter65267", "SherriDougherty6066"}, -- Mail to username, Example : USERNAME_TO_MAIL = {"username1", "username2"} 
 }
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5653ca0a4685e7d4268329988eefdb21.lua"))()
