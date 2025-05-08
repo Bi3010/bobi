@@ -1,30 +1,105 @@
-script_key="lcpgMSgwgveranIoTdvRHNGrZXhACFFs";
-getgenv().petsGoConfig = {
-    AUTO_RESTART = true,
-    -- true/false (true = consume, false = automail)
-    CONSUME_CORRUPTED_HUGE_BAIT = true,
-    CONSUME_ALL_MINING_CHEST = true,
-    CONSUME_EVENT_EGG = true, -- Hype eggs not included
-    CONSUME_INSTA_LUCK_4 = true,
-    CONSUME_VAULT_KEY = true,
-    CONSUME_KRAKEN_TENTACLE = true,
-    CONSUME_BUCKET_O_CHUM = true,
-    WEBHOOK_URL = "",
-    MAILING_WEBHOOK_URL = "",
-    DISCORD_ID = "",
-    WEBHOOK_ODDS = 1000000000, -- Minimum Pet Odds To Trigger Webhook
+getgenv().UserConfig = {
+    FPS                 = 3,
+    AddFriends          = true,
+    RedeemCode = {"RELEASE", "THANKS", "LUCKY", "Easter", "Throwback", "update2", "sylentlyssorry"},
+    EquipBestFlavorGum  = true,
+    BuyFlavorGum        = true,
+    AutoMinigames       = true,
+    AutoRollDice        = true,
+    ["Super Ticket"]    = "Robot Claw",
+    ["Giant Chest"] = false,
+    ["Void Chest"] = false,
+    ["Golden Chest"] = false,
+    ["Royal Chest"] = false,
+    Competitive = {
+        Choosing = "1,2,1,2,1,1,2,2,1,2"
+    },
+    ["Detector"] = {
+        Enable = true,
+        ["Name Needed"] = {"Avernus", "Patronus"},
+        ["Rarity Needed"] = {
+            "Legendary",
+            "Mythic",
+            "Secret"
+        }
+    },
+    ["Alien Shop"] = {
+        Enable = false,
+        ["Min Gems"] = "1m",
+        ["Items Needed"] = {
+            "Golden Key",
+            "Mystery Box",
+            "Coins III",
+            "Coins IV",
+            "Lucky III",
+            "Lucky IV",
+            "Speed III",
+            "Speed IV"
+        }
+    },
+    ["Black Market"] = {
+        Enable = true,
+        ["Min Gems"] = "1m",
+        ["Items Needed"] = {
+            "Lucky Evolved",
+            -- "Coins Evolved",
+            "Mythic Evolved",
+            "Speed Evolved",
+            "Lucky V",
+            -- "Coins V",
+            "Mythic V",
+            "Speed V"
+        }
+    },
+    ["Craft Potions"] = {
+        Enable = true,
+        MinGems = "100k",
+        ["Potion Needed"] = {
+            {"Coins", Level = 5},
+            {"Speed", Level = 5},
+            {"Lucky", Level = 5},
+            {"Mythic", Level = 5}
+        }
+    },
+    ["Mastery"] = {
+        Pets = 15,
+        Buffs = 15,
+        Shops = 10
+    },
+    ["Star Shop"] = {
+        Enable = true,
+        MinStars = 100,
+        ["Items Needed"] = {
+            "Speed V",
+            "Lucky V",
+            "Mythic V"
+        }
+    },
+    ["Rifts"] = {
+        AlwaysFindRifts = true,
+        Targets = {"Silly Egg", "Cyber Egg", "Game Egg"},
+        Luck = 5
+    },
+    ["Min gems"] = "3m",
+    FindDuck = "Nightmare Egg",
+    ["Best Potions Find Duck"] = true,
+    ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
+    ["Gems coefficient"] = 24,
+    ["Tickets coefficient"] = 100,
+    ["Replace FindDuck"] = "Common Egg",
+    ["Auto Restart"] = true,
 
-    DIAMOND_EGG = true,  -- true = Diamond Egg, false = F2P Egg
-    MINE_ALL_ORES = false,  -- true = all ore, false = runic & event ore
-	
-    MAILING = true,  -- Auto mail
-    SHOW_PET_WEBHOOK_USERNAME = true,
-    MAIL_WEBHOOK_ODDS = 1000000000, -- Minimum Pet Odds To Trigger MAIL Webhook
-    MAIL_PET_ODDS = 1000000000,  -- Minimum Pet Odds To Mail
-
-
-    USERNAME_TO_MAIL = {"phatbi1273621537", "bi3826r8wsdfsdif"}, -- Mail to username, Example : USERNAME_TO_MAIL = {"username1", "username2"} 
+    ["Webhook"] = {
+        Enable = true,
+        Note = getgenv().DuckHook,
+        ID = "463994708889174026", -- Enter your Discord ID here
+        URL = "https://discord.com/api/webhooks/1370032101285433474/SzTapWd5UFLJYjgEwrUBo9XwLqrh_AEfY_1QVw8G8AYr6dGIYFCLUm-amvHx_0Ckbvck", -- Add your webhook URL here
+        Rarity = {
+            "Legendary",
+            "Secret"
+        },
+        Legendary = "1m",
+        ["Special Pets"] = {"Avernus", "Patronus"}
+    }
 }
-
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5653ca0a4685e7d4268329988eefdb21.lua"))()
-
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b85c17425e59b76c0487999c21ef4557.lua"))()
